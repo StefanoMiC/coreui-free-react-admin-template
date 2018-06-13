@@ -1,9 +1,53 @@
 export default {
   items: [
     {
-      name: 'Dashboard',
-      url: '/dashboard',
-      icon: 'icon-speedometer',
+      title: true,
+      name: 'Components',
+      wrapper: {
+        element: '',
+        attributes: {},
+      },
+    },
+    {
+      name: 'Pages',
+      url: 'pages',
+      icon: 'icon-docs',
+      badge: {
+        variant: 'info',
+        text: 'NEW',
+      },
+    },
+    {
+      name: 'Menus',
+      url: 'menus',
+      icon: 'icon-menu',
+      badge: {
+        variant: 'info',
+        text: 'NEW',
+      },
+    },
+    {
+      name: 'Users',
+      url: 'users',
+      icon: 'icon-people',
+      badge: {
+        variant: 'info',
+        text: 'NEW',
+      },
+    },
+    {
+      name: 'Uploads',
+      url: 'uploads',
+      icon: 'icon-cloud-upload',
+      badge: {
+        variant: 'info',
+        text: 'NEW',
+      },
+    },
+    {
+      name: 'Analytics',
+      url: 'analytics',
+      icon: 'icon-pie-chart',
       badge: {
         variant: 'info',
         text: 'NEW',

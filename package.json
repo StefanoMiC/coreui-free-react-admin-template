@@ -20,6 +20,7 @@
     "chart.js": "^2.7.2",
     "classnames": "^2.2.6",
     "core-js": "^2.5.7",
+    "cross-env": "^5.1.6",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "flag-icon-css": "^3.0.0",
@@ -44,7 +45,7 @@
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./node_modules ./src/scss -o ./src/scss",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./node_modules ./src/scss -o ./src/scss --watch --recursive",
-    "start-js": "react-scripts start",
+    "start-js": "cross-env PORT=3001 react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",

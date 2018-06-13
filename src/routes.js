@@ -57,6 +57,41 @@ const Navs = Loadable({
   loading: Loading,
 });
 
+const Pages = Loadable({
+  loader: () => import('./views/Pages/Pages'),
+  loading: Loading,
+});
+
+const PagesPage = Loadable({
+  loader: () => import('./views/Pages/Pages-page'),
+  loading: Loading,
+});
+
+const Menus = Loadable({
+  loader: () => import('./views/Menus'),
+  loading: Loading,
+});
+
+const MenuDetail = Loadable({
+  loader: () => import('./views/Menus/Menu-detail'),
+  loading: Loading,
+});
+
+const Uploads = Loadable({
+  loader: () => import('./views/Uploads'),
+  loading: Loading,
+});
+
+const Users = Loadable({
+  loader: () => import('./views/Users'),
+  loading: Loading,
+});
+
+const Analytics = Loadable({
+  loader: () => import('./views/Analytics'),
+  loading: Loading,
+});
+
 const Paginations = Loadable({
   loader: () => import('./views/Base/Paginations'),
   loading: Loading,
@@ -193,7 +228,14 @@ const routes = [
   { path: '/base/jumbotrons', name: 'Jumbotrons', component: Jumbotrons },
   { path: '/base/list-groups', name: 'List Groups', component: ListGroups },
   { path: '/base/navbars', name: 'Navbars', component: Navbars },
-  { path: '/base/navs', name: 'Navs', component: Navs },
+  { path: '/base/navs', name: 'Navs', component: Navs }, 
+  { path: '/pages', name: 'Pages', component: Pages }, 
+  { path: '/pages-page', name: 'PagesPage', component: PagesPage }, 
+  { path: '/menus', name: 'Menus', component: Menus }, 
+  { path: '/menu-detail', name: 'MenuDetail', component: MenuDetail }, 
+  { path: '/uploads', name: 'Uploads', component: Uploads }, 
+  { path: '/users', name: 'Users', component: Users },
+  { path: '/analytics', name: 'Analytics', component: Analytics },
   { path: '/base/paginations', name: 'Paginations', component: Paginations },
   { path: '/base/popovers', name: 'Popovers', component: Popovers },
   { path: '/base/progress-bar', name: 'Progress Bar', component: ProgressBar },

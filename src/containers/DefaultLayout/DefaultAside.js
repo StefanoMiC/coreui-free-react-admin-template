@@ -252,7 +252,7 @@ class DefaultAside extends Component {
             <div className="aside-options">
               <div className="clearfix mt-3">
                 <small><b>Option 2</b></small>
-                <AppSwitch className={'float-right'} variant={'pill'} label color={'success'} size={'sm'}/>
+                <AppSwitch className={'float-right'} variant={'pill'} label color={'success'} size={'sm'} />
               </div>
               <div>
                 <small className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
