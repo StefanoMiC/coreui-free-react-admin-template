@@ -1,6 +1,10 @@
   .sub-menu {
       border-left: 1px solid #c8ced3 !important;
   }
+
+  .cursor {
+      cursor: pointer;
+  }
   
   @media (max-width: 576px) {
     main .container-fluid{
