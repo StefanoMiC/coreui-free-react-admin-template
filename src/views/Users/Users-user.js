@@ -87,15 +87,15 @@ class UsersUser extends Component {
                       <Col xs="12" md="6">
                         <Form>
                           <FormGroup>
-                            <Label for="nameField"><h4 className="mb-0">Nome</h4></Label>
+                            <Label for="nameField"><h5 className="mb-0">Nome</h5></Label>
                             <Input type="text" name="name" id="nameField" placeholder="Nome" />
                           </FormGroup>
                           <FormGroup>
-                            <Label for="surnameField"><h4 className="mb-0">Cognome</h4></Label>
+                            <Label for="surnameField"><h5 className="mb-0">Cognome</h5></Label>
                             <Input type="text" name="surname" id="surnameField" placeholder="Cognome" />
                           </FormGroup>
                           <FormGroup>
-                            <Label for="emailField"><h4 className="mb-0">Email</h4></Label>
+                            <Label for="emailField"><h5 className="mb-0">Email</h5></Label>
                             <Input type="email" name="email" id="emailField" placeholder="email@mail.com" />
                           </FormGroup>
                         </Form>
@@ -105,7 +105,7 @@ class UsersUser extends Component {
                               <Col xs="12" md="8">
                                 <Form>
                                   <FormGroup>
-                                    <Label for="roleField"><h4 className="mb-0">Ruolo</h4></Label>
+                                    <Label for="roleField"><h5 className="mb-0">Ruolo</h5></Label>
                                     <Input type="text" name="role" id="roleField" placeholder="ruolo" />
                                   </FormGroup>
                                 </Form>
