@@ -74,6 +74,7 @@ class Users extends Component {
                     <th>Date registered</th>
                     <th>Role</th>
                     <th></th>
+                    <th></th>
                   </tr>
                   </thead>
                   <tbody>
@@ -81,75 +82,55 @@ class Users extends Component {
                     <td>Samppa Nori</td>
                     <td>2012/01/01</td>
                     <td>Member</td>
+                    <td className="text-right">
+                          <Button size="sm" outline color="warning">Warning</Button> 
+                    </td>
                     <td>
-                        <Row className="mr-0">
-                        <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
-                          <Button size="sm" block outline color="warning">Warning</Button>
-                        </Col>
-                        <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
-                          <Button size="sm" block outline color="danger">Danger</Button>
-                        </Col>
-                      </Row>
+                          <Button size="sm" outline color="danger">Danger</Button>
                     </td>
                   </tr>
                   <tr>
                     <td>Estavan Lykos</td>
                     <td>2012/02/01</td>
                     <td>Staff</td>
+                    <td className="text-right">
+                          <Button size="sm" outline color="warning">Warning</Button> 
+                    </td>
                     <td>
-                                                <Row className="mr-0">
-                        <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
-                          <Button size="sm" block outline color="warning">Warning</Button>
-                        </Col>
-                        <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
-                          <Button size="sm" block outline color="danger">Danger</Button>
-                        </Col>
-                      </Row>
+                          <Button size="sm" outline color="danger">Danger</Button>
                     </td>
                   </tr>
                   <tr>
                     <td>Chetan Mohamed</td>
                     <td>2012/02/01</td>
                     <td>Admin</td>
-                    <td>
-                                                <Row className="mr-0">
-                        <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
-                          <Button size="sm" block outline color="warning">Warning</Button>
-                        </Col>
-                        <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
-                          <Button size="sm" block outline color="danger">Danger</Button>
-                        </Col>
-                      </Row>
-                    </td>
+                      <td className="text-right">
+                            <Button size="sm" outline color="warning">Warning</Button> 
+                      </td>
+                      <td>
+                            <Button size="sm" outline color="danger">Danger</Button>
+                      </td>
                   </tr>
                   <tr>
                     <td>Derick Maximinus</td>
                     <td>2012/03/01</td>
                     <td>Member</td>
+                    <td className="text-right">
+                      <Button size="sm" outline color="warning">Warning</Button>
+                    </td>
                     <td>
-                                                <Row className="mr-0">
-                        <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
-                          <Button size="sm" block outline color="warning">Warning</Button>
-                        </Col>
-                        <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
-                          <Button size="sm" block outline color="danger">Danger</Button>
-                        </Col>
-                      </Row>
+                      <Button size="sm" outline color="danger">Danger</Button>
                     </td>
                   </tr>
                   <tr>
                     <td>Friderik Dávid</td>
                     <td>2012/01/21</td>
                     <td>Staff</td>
+                    <td className="text-right">
+                          <Button size="sm" outline color="warning">Warning</Button> 
+                    </td>
                     <td>
-                                                <Row className="mr-0">
-                        <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
-                          <Button size="sm" block outline color="warning">Warning</Button>
-                        </Col>
-                        <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
-                          <Button size="sm" block outline color="danger">Danger</Button>
-                        </Col>
-                      </Row>
+                          <Button size="sm" outline color="danger">Danger</Button>
                     </td>
                   </tr>
                   </tbody>
