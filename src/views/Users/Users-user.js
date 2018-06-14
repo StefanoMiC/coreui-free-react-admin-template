@@ -79,7 +79,7 @@ class UsersUser extends Component {
                     <Row>
                       <Col xs="12" md="4">
                         <Row>
-                          <Col xs="12" md="10">
+                          <Col xs="12" md="10" className="mt-2 mb-4 mb-md-0">
                             <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                           </Col>
                         </Row>                        
@@ -102,7 +102,7 @@ class UsersUser extends Component {
                         <Row>
                           <Col xs="12">
                             <Row>
-                              <Col xs="12" md="8">
+                              <Col xs="8" md="8">
                                 <Form>
                                   <FormGroup>
                                     <Label for="roleField"><h5 className="mb-0">Ruolo</h5></Label>
@@ -110,7 +110,7 @@ class UsersUser extends Component {
                                   </FormGroup>
                                 </Form>
                               </Col>
-                              <Col xs="12" md="4" className="mt-3 align-self-center">
+                              <Col xs="4" md="4" className="mt-3 align-self-center">
                                 <Row>
                                   <Col xs="12" md="12">
                                     <Form>
@@ -128,14 +128,14 @@ class UsersUser extends Component {
                           </Col>
                         </Row>
                       </Col>
-                      <Col xs="12" md="2" className="mt-2 px-4">
+                      <Col xs="12" md="2" className="mt-4 mt-md-0 px-md-4">
                         <Card>
                           <CardBody>
                             <Row>
-                              <Col xs="12" md="8">
+                              <Col xs="6" md="8">
                                 <h5>Admin</h5>
                               </Col>
-                              <Col xs="12" md="4" className="mt-1">
+                              <Col xs="6" md="4" className="mt-1">
                                 <AppSwitch className={'float-right mb-0'} label color={'success'} defaultChecked size={'sm'}/>
                               </Col>
                             </Row>
@@ -144,10 +144,10 @@ class UsersUser extends Component {
                       </Col>
                     </Row>
                     <Row className="mt-3 mt-md-2 mb-2">
-                      <Col xs="10">
+                      <Col xs="12" md="10">
                         <Form>
                           <FormGroup>
-                            <Label for="pageContent"><h1>Biogafia</h1></Label>
+                            <Label for="pageContent"><h1 className="mb-0">Biogafia</h1></Label>
                             <Input type="textarea" name="content" id="pageContent" style={{height:'200px'}} placeholder="Scrivi biografia" />
                           </FormGroup>
                         </Form>
