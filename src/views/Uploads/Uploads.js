@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Row, Card, CardBody, CardHeader, CardFooter, CardImg, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink, Modal, ModalHeader, ModalBody, ModalFooter, Button } from 'reactstrap';
+import { Col, Row, Card, CardBody, CardHeader, CardFooter, CardImg, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink, Modal, ModalHeader, ModalBody, ModalFooter, Button, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 class Uploads extends Component {
 
@@ -33,19 +33,26 @@ class Uploads extends Component {
       <div className="animated fadeIn">
         <Row>
           <Col xs="12">
-            <Col xs="12" md="4" className="p-0">
+            <Col xs="12" className="p-0">
               <Card className="card-accent-success">
                 <CardHeader>
                   <i className="icon-cloud-upload"></i><strong>Uploads</strong>
                 </CardHeader>
                 <CardBody>
-                  <Nav pills>
+                  <Nav pills className="float-left">
                     <NavItem>
-                      <NavLink href="#" active success className="mr-1">Link</NavLink>
+                      <Input type="file" name="file" id="exampleFile" />  
                     </NavItem>
+                    <NavItem>
+                      <NavLink href="#" active success className="mr-1 mt-3 mt-md-0">
+                          Carica
+                      </NavLink>
+                    </NavItem>
+                  </Nav>
+                  <Nav pills className="float-right">
                     <Dropdown nav isOpen={this.state.dropdownOpen[1]} toggle={() => {this.toggle(1);}}>
                       <DropdownToggle nav caret>
-                        Dropdown
+                        Categorie
                       </DropdownToggle>
                       <DropdownMenu>
                         <DropdownItem header>Header</DropdownItem>
@@ -56,13 +63,7 @@ class Uploads extends Component {
                       </DropdownMenu>
                     </Dropdown>
                     <NavItem>
-                      <NavLink href="#">Link</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="#">Another Link</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink disabled href="#">Disabled Link</NavLink>
+                      <NavLink href="#">Cestino</NavLink>
                     </NavItem>
                   </Nav>
                 </CardBody>
