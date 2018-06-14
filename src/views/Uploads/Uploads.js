@@ -41,7 +41,7 @@ class Uploads extends Component {
                 <CardBody>
                   <Nav pills>
                     <NavItem>
-                      <NavLink href="#" active success>Link</NavLink>
+                      <NavLink href="#" active success className="mr-1">Link</NavLink>
                     </NavItem>
                     <Dropdown nav isOpen={this.state.dropdownOpen[1]} toggle={() => {this.toggle(1);}}>
                       <DropdownToggle nav caret>
@@ -76,7 +76,7 @@ class Uploads extends Component {
                 <CardBody>
                   <Row>
                     <Col xs="12" md="2">
-                      <Card onClick={this.toggleModal}>
+                      <Card className="cursor" onClick={this.toggleModal}>
                         <CardBody>
                           <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                         </CardBody>
@@ -86,7 +86,7 @@ class Uploads extends Component {
                       </Card>
                     </Col>
                     <Col xs="12" md="2">
-                      <Card onClick={this.toggleModal}>
+                      <Card className="cursor" onClick={this.toggleModal}>
                         <CardBody>
                           <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                         </CardBody>
@@ -96,7 +96,7 @@ class Uploads extends Component {
                       </Card>
                     </Col>
                     <Col xs="12" md="2">
-                      <Card onClick={this.toggleModal}>
+                      <Card className="cursor" onClick={this.toggleModal}>
                         <CardBody>
                           <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                         </CardBody>
@@ -106,7 +106,7 @@ class Uploads extends Component {
                       </Card>
                     </Col>
                     <Col xs="12" md="2">
-                      <Card onClick={this.toggleModal}>
+                      <Card className="cursor" onClick={this.toggleModal}>
                         <CardBody>
                           <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                         </CardBody>
@@ -116,7 +116,7 @@ class Uploads extends Component {
                       </Card>
                     </Col>
                     <Col xs="12" md="2">
-                      <Card onClick={this.toggleModal}>
+                      <Card className="cursor" onClick={this.toggleModal}>
                         <CardBody>
                           <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                         </CardBody>
@@ -126,7 +126,7 @@ class Uploads extends Component {
                       </Card>
                     </Col>
                     <Col xs="12" md="2">
-                      <Card onClick={this.toggleModal}>
+                      <Card className="cursor" onClick={this.toggleModal}>
                         <CardBody>
                           <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                         </CardBody>
@@ -136,7 +136,7 @@ class Uploads extends Component {
                       </Card>
                     </Col>
                     <Col xs="12" md="2">
-                      <Card onClick={this.toggleModal}>
+                      <Card className="cursor" onClick={this.toggleModal}>
                         <CardBody>
                           <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                         </CardBody>
@@ -146,7 +146,7 @@ class Uploads extends Component {
                       </Card>
                     </Col>
                     <Col xs="12" md="2">
-                      <Card onClick={this.toggleModal}>
+                      <Card className="cursor" onClick={this.toggleModal}>
                         <CardBody>
                           <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                         </CardBody>
@@ -156,7 +156,7 @@ class Uploads extends Component {
                       </Card>
                     </Col>
                     <Col xs="12" md="2">
-                      <Card onClick={this.toggleModal}>
+                      <Card className="cursor" onClick={this.toggleModal}>
                         <CardBody>
                           <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                         </CardBody>
@@ -166,13 +166,13 @@ class Uploads extends Component {
                       </Card>
                     </Col>
                     <Modal isOpen={this.state.modal} toggle={this.toggleModal} className={this.props.className}>
-                      <ModalHeader toggle={this.toggleModal}>Modal title</ModalHeader>
+                      <ModalHeader toggle={this.toggleModal}>Pic Name</ModalHeader>
                       <ModalBody>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                       </ModalBody>
                       <ModalFooter>
-                        <Button color="primary" onClick={this.toggleModal}>Do Something</Button>{' '}
-                        <Button color="secondary" onClick={this.toggleModal}>Cancel</Button>
+                        <Button color="warning" onClick={this.toggleModal}>Annulla</Button>{' '}
+                        <Button color="danger" onClick={this.toggleModal}>Elimina</Button>
                       </ModalFooter>
                     </Modal>
                   </Row>
