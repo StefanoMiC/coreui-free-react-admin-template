@@ -141,9 +141,11 @@ class PagesPage extends Component {
                     </Row>
                   </Col>
                 </Row>
-                <Col col="2" className="mb-4 text-center">
-                  <Button color="primary" size="lg">Salva</Button>
-                </Col>
+                <Row>
+                  <Col xs="12" md={{ size: '2', offset: 5 }} className="mb-2 mt-4 mb-md-4 mt-md-0">
+                    <Button color="primary" block size="lg">Salva</Button>
+                  </Col>
+                </Row>
               </CardBody>
             </Card>
           </Col>
