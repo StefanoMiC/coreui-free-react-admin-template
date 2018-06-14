@@ -3,7 +3,8 @@ import Page404 from './Page404';
 import Page500 from './Page500';
 import Register from './Register';
 import Pages from './Pages';
+import PagesPage from './Pages-page';
 
 export {
-  Login, Page404, Page500, Register, Pages,
+  Login, Page404, Page500, Register, Pages, PagesPage,
 };

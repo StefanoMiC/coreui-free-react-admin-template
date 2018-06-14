@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardBody, CardHeader, CardImg, Button, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink, Badge, Col, Pagination, PaginationItem, PaginationLink, Row, Table, Collapse, Fade, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import { AppSwitch } from '@coreui/react';
-import { EOVERFLOW } from 'constants';
+import { Card, CardBody, CardHeader, CardImg, Button, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink, Col, Row, Table, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 class MenuDetail extends Component {
 
@@ -74,10 +72,10 @@ class MenuDetail extends Component {
                 </Nav>
               </CardHeader>
               <CardBody>
-                <Row className="p-md-5">
-                  <Col xs="12" md="8">
+                <Row className="justify-content-center p-md-5">
+                  <Col xs="12" md="7">
                     <Row>
-                      <Col xs="12" md="6">
+                      <Col xs="12" md="8">
                         <Form>
                           <FormGroup>
                             <Label for="Nome"><h1>Menu principale</h1></Label> 
@@ -85,7 +83,7 @@ class MenuDetail extends Component {
                           </FormGroup>
                         </Form>
                       </Col>
-                      <Col xs="12" md="8">
+                      <Col xs="12" md="10">
                         <Form>
                           <FormGroup>
                             <Label for="menuDescription"><h1>Descrizione</h1></Label>
@@ -93,7 +91,7 @@ class MenuDetail extends Component {
                           </FormGroup>
                         </Form>
                       </Col>
-                      <Col xs="12" md="8" className="mt-5 mt-md-3">
+                      <Col xs="12" md="10" className="mt-5 mt-md-3">
                         <Card>
                           <CardBody>
                             <Row>

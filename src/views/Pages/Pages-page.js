@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Card, CardBody, CardHeader, Button, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink, Badge, Col, Pagination, PaginationItem, PaginationLink, Row, Table, Collapse, Fade, Form, FormGroup, Label, Input } from 'reactstrap';
-import { AppSwitch } from '@coreui/react';
-import { EOVERFLOW } from 'constants';
+import { Card, CardBody, CardHeader, Button, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink, Col, Row, Table, Collapse, Form, FormGroup, Label, Input } from 'reactstrap';
+
 
 class PagesPage extends Component {
 
@@ -9,11 +8,11 @@ class PagesPage extends Component {
     super(props);
 
     this.toggle = this.toggle.bind(this);
-    this.toggleFade = this.toggleFade.bind(this);
+    this.toggleCollapse = this.toggleCollapse.bind(this);
     this.toggleSeo = this.toggleSeo.bind(this);
     this.state = {
       dropdownOpen: [false, false],
-      fadeIn: false
+      collapse: false 
     };
   }
 
@@ -27,8 +26,8 @@ class PagesPage extends Component {
   }
 
 
-  toggleFade() {
-    this.setState((prevState) => { return { fadeIn: !prevState } });
+  toggleCollapse() {
+    this.setState({ collapse: !this.state.collapse });
   }
   
   toggleSeo() {
@@ -75,10 +74,10 @@ class PagesPage extends Component {
                 </Nav>
               </CardHeader>
               <CardBody>
-                <Row className="justify-content-center mt-5">
-                  <Col xs="8">
+                <Row className="justify-content-center mt-3 mt-md-5">
+                  <Col xs="12" md="8">
                     <Row>
-                      <Col xs="6">
+                      <Col xs="12" md="6">
                         <Form>
                           <FormGroup>
                             <Label for="pageTitle"><h1>Titolo</h1></Label> 
@@ -90,15 +89,15 @@ class PagesPage extends Component {
                           </FormGroup>
                         </Form>
                       </Col>
-                      <Col xs={{ size: '5', offset: 1 }}>
+                      <Col xs="12" md={{ size: '5', offset: 1 }}>
                         <Form>
                           <FormGroup>
                             <Label for="menu"><h1>Menu</h1></Label>
-                            <Dropdown color="primary" isOpen={this.state.dropdownOpen[0]} toggle={() => {
+                            <Dropdown isOpen={this.state.dropdownOpen[0]} toggle={() => {
                               this.toggle(0);
                             }}>
                               <DropdownToggle caret>
-                                Seleziona menu da associare alla pagina
+                                Seleziona voce menu da associare
                               </DropdownToggle>
                               <DropdownMenu>
                                 <DropdownItem>Voce 1</DropdownItem>
@@ -110,7 +109,7 @@ class PagesPage extends Component {
                         </Form>
                       </Col>
                     </Row>
-                   <Row className="mt-5">
+                   <Row className="mt-3">
                       <Col xs="12">
                         <Form>
                           <FormGroup>
@@ -121,22 +120,23 @@ class PagesPage extends Component {
                       </Col>
                    </Row>
                   </Col>
-                  <Col xs="8 mt-5">
+                  <Col xs="12" md="8 mt-3 mb-5 mt-md-5 mb-md-5">
                     <Row>
-                      <Col xs="6">
-                        <Button color="primary" onClick={this.toggleSeo}>SEO</Button>
-                        <Fade in={this.state.fadeIn} tag="h5" className="mt-3">
+                      <Col xs="12" md="6">
+                        <Button color="secondary" onClick={this.toggleCollapse}>SEO</Button>
+                        <Collapse isOpen={this.state.collapse} tag="h5" className="mt-3">
                           <Card className="mb-5">
                             <CardBody>
                               <Form>
                                 <FormGroup>
                                   <Label for="seoTitle"><h3>Seo</h3></Label>
-                                  <Input type="input" name="seoTitle" id="seoTitle" placeholder="inserisci titolo" />
+                                  <Input type="input" name="seoTitle" id="seoTitle" placeholder="Keywords" />
+                                  <Button color="primary" size="sm" className="float-right mt-3">Salva</Button>
                                 </FormGroup>
                               </Form>
                             </CardBody>
                           </Card>
-                        </Fade>
+                        </Collapse>
                       </Col>
                     </Row>
                   </Col>

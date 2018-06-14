@@ -87,6 +87,11 @@ const Users = Loadable({
   loading: Loading,
 });
 
+const UsersUser = Loadable({
+  loader: () => import('./views/Users/Users-user'),
+  loading: Loading,
+});
+
 const Analytics = Loadable({
   loader: () => import('./views/Analytics'),
   loading: Loading,
@@ -235,6 +240,7 @@ const routes = [
   { path: '/menu-detail', name: 'MenuDetail', component: MenuDetail }, 
   { path: '/uploads', name: 'Uploads', component: Uploads }, 
   { path: '/users', name: 'Users', component: Users },
+  { path: '/users-user', name: 'UsersUser', component: UsersUser },  
   { path: '/analytics', name: 'Analytics', component: Analytics },
   { path: '/base/paginations', name: 'Paginations', component: Paginations },
   { path: '/base/popovers', name: 'Popovers', component: Popovers },

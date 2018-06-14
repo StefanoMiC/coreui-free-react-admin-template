@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import { Card, CardBody, CardHeader, Button, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink, Badge, Col, Pagination, PaginationItem, PaginationLink, Row, Table, Collapse, Fade } from 'reactstrap';
-import { AppSwitch } from '@coreui/react';
+import React, { Component} from 'react';
+import { Card, CardBody, CardHeader, Button, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink, Col, Pagination, PaginationItem, PaginationLink, Row, Table } from 'reactstrap';
+
+
 
 class Pages extends Component {
 
@@ -32,7 +33,7 @@ class Pages extends Component {
     return (
       <div className="animated fadeIn">
         <Row>
-          <Col xs="12">
+          <Col xs="10">
             <Card className="card-accent-primary">
               <CardHeader>
                 <Nav className="float-left">
@@ -78,27 +79,27 @@ class Pages extends Component {
                   </tr>
                   </thead>
                   <tbody>
-                  <tr>
-                    <td>Samppa Nori</td>
-                    <td>2012/01/01</td>
-                    <td>Member</td>
-                    <td>
+                    <tr>
+                      <td>Samppa Nori</td>
+                      <td>2012/01/01</td>
+                      <td>Member</td>
+                      <td>
                         <Row className="mr-0">
-                        <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
-                          <Button size="sm" block outline color="warning">Warning</Button>
-                        </Col>
-                        <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
-                          <Button size="sm" block outline color="danger">Danger</Button>
-                        </Col>
-                      </Row>
-                    </td>
-                  </tr>
+                          <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
+                            <Button size="sm" block outline color="warning">Warning</Button>
+                          </Col>
+                          <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
+                            <Button size="sm" block outline color="danger">Danger</Button>
+                          </Col>
+                        </Row>
+                      </td>
+                    </tr>
                   <tr>
                     <td>Estavan Lykos</td>
                     <td>2012/02/01</td>
                     <td>Staff</td>
                     <td>
-                                                <Row className="mr-0">
+                      <Row className="mr-0">
                         <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
                           <Button size="sm" block outline color="warning">Warning</Button>
                         </Col>
@@ -113,7 +114,7 @@ class Pages extends Component {
                     <td>2012/02/01</td>
                     <td>Admin</td>
                     <td>
-                                                <Row className="mr-0">
+                      <Row className="mr-0">
                         <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
                           <Button size="sm" block outline color="warning">Warning</Button>
                         </Col>
@@ -128,7 +129,7 @@ class Pages extends Component {
                     <td>2012/03/01</td>
                     <td>Member</td>
                     <td>
-                                                <Row className="mr-0">
+                      <Row className="mr-0">
                         <Col col="6" sm="2" md="2" className="mb-3 mb-xl-0">
                           <Button size="sm" block outline color="warning">Warning</Button>
                         </Col>
