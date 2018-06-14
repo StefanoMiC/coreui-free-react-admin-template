@@ -114,7 +114,7 @@ class PagesPage extends Component {
                         <Form>
                           <FormGroup>
                             <Label for="pageContent"><h1>Contenuto</h1></Label>
-                            <Input type="textarea" name="content" id="pageContent" placeholder="Inserisci testo" />
+                            <Input type="textarea" name="content" id="pageContent" style={{ height: '200px' }} placeholder="Inserisci testo" />
                           </FormGroup>
                         </Form>
                       </Col>

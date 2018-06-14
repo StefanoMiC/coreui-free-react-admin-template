@@ -39,12 +39,12 @@ class UsersUser extends Component {
       <div className="animated fadeIn">
         <Row>
           <Col xs="12">
-            <Card className="card-accent-primary">
+            <Card className="card-accent-danger">
               <CardHeader>
                 <Nav className="float-left">
                   <NavItem> 
                     <NavLink className="pl-1">
-                        <i className="icon-doc mr-2"></i><strong>Page Creator</strong>
+                        <i className="icon-user mr-2"></i><strong>User Profile</strong>
                     </NavLink>
                   </NavItem>
                 </Nav>
@@ -75,16 +75,16 @@ class UsersUser extends Component {
               </CardHeader>
               <CardBody>
                 <Row className="justify-content-center mt-3 mt-md-5">
-                  <Col xs="12" md="10">
+                  <Col xs="12" md={{ size: '10', offset: 1 }}>
                     <Row>
-                      <Col xs="12" md="6">
+                      <Col xs="12" md="4">
                         <Row>
                           <Col xs="12" md="10">
                             <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                           </Col>
                         </Row>                        
                       </Col>
-                      <Col xs="12" md="4">
+                      <Col xs="12" md="6">
                         <Form>
                           <FormGroup>
                             <Label for="nameField"><h4 className="mb-0">Nome</h4></Label>
@@ -144,7 +144,7 @@ class UsersUser extends Component {
                       </Col>
                     </Row>
                     <Row className="mt-3 mt-md-2 mb-2">
-                      <Col xs="12">
+                      <Col xs="10">
                         <Form>
                           <FormGroup>
                             <Label for="pageContent"><h1>Biogafia</h1></Label>

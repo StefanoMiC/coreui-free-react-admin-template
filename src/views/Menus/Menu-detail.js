@@ -72,87 +72,91 @@ class MenuDetail extends Component {
                 </Nav>
               </CardHeader>
               <CardBody>
-                <Row className="justify-content-center p-md-5">
-                  <Col xs="12" md="7">
-                    <Row>
-                      <Col xs="12" md="8">
-                        <Form>
-                          <FormGroup>
-                            <Label for="Nome"><h1>Menu principale</h1></Label> 
-                            <Input type="input" name="menuTitle" id="menuTitle" placeholder="Inserisci nome" />
-                          </FormGroup>
-                        </Form>
+                <Row>
+                  <Col xs="12" md={{ size: '12', offset: 1 }}>
+                    <Row className="justify-content-center p-md-5">
+                      <Col xs="12" md="7">
+                        <Row>
+                          <Col xs="12" md="8">
+                            <Form>
+                              <FormGroup>
+                                <Label for="Nome"><h2 className="mb-0">Menu principale</h2></Label> 
+                                <Input type="input" name="menuTitle" id="menuTitle" placeholder="Inserisci nome" />
+                              </FormGroup>
+                            </Form>
+                          </Col>
+                          <Col xs="12" md="10">
+                            <Form>
+                              <FormGroup>
+                                <Label for="menuDescription"><h2 className="mb-0">Descrizione</h2></Label>
+                                <Input type="textarea" name="description" id="menuDescription" placeholder="Inserisci descrizione" />
+                              </FormGroup>
+                            </Form>
+                          </Col>
+                          <Col xs="12" md="6" className="mt-3 mt-md-3">
+                            <Card>
+                              <CardBody>
+                                <Row>
+                                  <Col xs="12" md="12">
+                                    <h4>Inserisci immagine</h4>
+                                    <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+                                  </Col>
+                                  <Col xs="12" md="12" className="align-self-end">
+                                    <Button color="primary" className="mt-3" block onClick={this.toggleModal}>Scegli Immagine</Button>
+                                  </Col>
+                                </Row>
+                              </CardBody>
+                            </Card>
+                          </Col>
+                        </Row>
                       </Col>
-                      <Col xs="12" md="10">
-                        <Form>
-                          <FormGroup>
-                            <Label for="menuDescription"><h1>Descrizione</h1></Label>
-                            <Input type="textarea" name="description" id="menuDescription" placeholder="Inserisci descrizione" />
-                          </FormGroup>
-                        </Form>
+                      <Col xs="12" md="4" className="mt-5 mb-0 pl-3 pl-md-5 mb-md-0 mt-md-3 sub-menu">
+                        <Row>
+                          <Col xs="12" md="8">
+                            <Form>
+                              <FormGroup>
+                                <Label for="Nome"><h4 className="mb-0">Sotto menu</h4></Label> 
+                                <Input type="input" name="menuTitle" id="menuTitle" placeholder="Inserisci nome" />
+                              </FormGroup>
+                            </Form>
+                          </Col>
+                          <Col xs="12" md="10" className="mt-0 mt-md-1">
+                            <Form>
+                              <FormGroup>
+                                <Label for="menuDescription"><h4 className="mb-0">Descrizione</h4></Label>
+                                <Input type="textarea" name="description" id="menuDescription" placeholder="Inserisci descrizione" />
+                              </FormGroup>
+                            </Form>
+                          </Col>
+                          <Col xs="12" md="8" className="mt-2 mt-md-3">
+                            <Card>
+                              <CardBody>
+                                <Row>
+                                  <Col xs="12" md="12">
+                                    <h5>Inserisci immagine</h5>
+                                    <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+                                  </Col>
+                                  <Col xs="12" md="12" className="align-self-end">
+                                    <Button color="primary" className="mt-3" block onClick={this.toggleModal}>Scegli Immagine</Button>
+                                  </Col>
+                                </Row>
+                              </CardBody>
+                            </Card>
+                          </Col>
+                        </Row>
                       </Col>
-                      <Col xs="12" md="10" className="mt-5 mt-md-3">
-                        <Card>
-                          <CardBody>
-                            <Row>
-                              <Col xs="12" md="8">
-                                <h4>Inserisci immagine</h4>
-                                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-                              </Col>
-                              <Col xs="12" md="4" className="align-self-end">
-                                <Button color="primary" onClick={this.toggleModal}>Scegli Immagine</Button>
-                              </Col>
-                            </Row>
-                          </CardBody>
-                        </Card>
-                      </Col>
+                      <Modal isOpen={this.state.modal} toggle={this.toggleModal} className={this.props.className}>
+                        <ModalHeader toggle={this.toggleModal}>Modal title</ModalHeader>
+                        <ModalBody>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </ModalBody>
+                        <ModalFooter>
+                          <Button color="primary" onClick={this.toggleModal}>Do Something</Button>{' '}
+                          <Button color="secondary" onClick={this.toggleModal}>Cancel</Button>
+                        </ModalFooter>
+                      </Modal>
                     </Row>
                   </Col>
-                  <Col xs="12" md="4" className="mt-5 mb-5 mb-md-0 mt-md-3">
-                    <Row>
-                      <Col xs="12" md="8">
-                        <Form>
-                          <FormGroup>
-                            <Label for="Nome"><h4>Sotto menu</h4></Label> 
-                            <Input type="input" name="menuTitle" id="menuTitle" placeholder="Inserisci nome" />
-                          </FormGroup>
-                        </Form>
-                      </Col>
-                      <Col xs="12" md="12" className="mt-0 mt-md-3">
-                        <Form>
-                          <FormGroup>
-                            <Label for="menuDescription"><h4>Descrizione</h4></Label>
-                            <Input type="textarea" name="description" id="menuDescription" placeholder="Inserisci descrizione" />
-                          </FormGroup>
-                        </Form>
-                      </Col>
-                      <Col xs="12" md="12" className="mt-5 mt-md-3">
-                        <Card>
-                          <CardBody>
-                            <Row>
-                              <Col xs="12" md="8">
-                                <h5>Inserisci immagine</h5>
-                                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-                              </Col>
-                              <Col xs="12" md="4" className="align-self-end">
-                                <Button color="primary" onClick={this.toggleModal}>Scegli Immagine</Button>
-                              </Col>
-                            </Row>
-                          </CardBody>
-                        </Card>
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Modal isOpen={this.state.modal} toggle={this.toggleModal} className={this.props.className}>
-                    <ModalHeader toggle={this.toggleModal}>Modal title</ModalHeader>
-                    <ModalBody>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </ModalBody>
-                    <ModalFooter>
-                      <Button color="primary" onClick={this.toggleModal}>Do Something</Button>{' '}
-                      <Button color="secondary" onClick={this.toggleModal}>Cancel</Button>
-                    </ModalFooter>
-                  </Modal>
                 </Row>
                 <Col col="2" className="mb-4 text-center">
                   <Button color="primary" size="lg">Salva</Button>

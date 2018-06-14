@@ -33,7 +33,7 @@ class Pages extends Component {
     return (
       <div className="animated fadeIn">
         <Row>
-          <Col xs="10">
+          <Col xs="12">
             <Card className="card-accent-primary">
               <CardHeader>
                 <Nav className="float-left">
