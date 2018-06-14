@@ -77,7 +77,22 @@ class MenuDetail extends Component {
                     <Row className="justify-content-center p-md-5">
                       <Col xs="12" md="7">
                         <Row>
-                          <Col xs="12" md="8">
+                          <Col xs="12" md="4" className="mt-3 mt-md-3">
+                            <Card>
+                              <CardBody>
+                                <Row>
+                                  <Col xs="12" md="12">
+                                    <h4>Immagine copertina</h4>
+                                    <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+                                  </Col>
+                                  <Col xs="12" md="12">
+                                    <Button color="primary" className="mt-4" onClick={this.toggleModal}>Scegli Immagine</Button>
+                                  </Col>
+                                </Row>
+                              </CardBody>
+                            </Card>
+                          </Col>
+                          <Col xs="12" md="6" className="d-flex flex-column justify-content-end pb-2">
                             <Form>
                               <FormGroup>
                                 <Label for="Nome"><h2 className="mb-0">Menu principale</h2></Label> 
@@ -89,29 +104,29 @@ class MenuDetail extends Component {
                             <Form>
                               <FormGroup>
                                 <Label for="menuDescription"><h2 className="mb-0">Descrizione</h2></Label>
-                                <Input type="textarea" name="description" id="menuDescription" placeholder="Inserisci descrizione" />
+                                <Input type="textarea" name="description" id="menuDescription" style={{height:'150px'}} placeholder="Inserisci descrizione" />
                               </FormGroup>
                             </Form>
-                          </Col>
-                          <Col xs="12" md="6" className="mt-3 mt-md-3">
-                            <Card>
-                              <CardBody>
-                                <Row>
-                                  <Col xs="12" md="12">
-                                    <h4>Inserisci immagine</h4>
-                                    <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-                                  </Col>
-                                  <Col xs="12" md="12" className="align-self-end">
-                                    <Button color="primary" className="mt-4 float-right" onClick={this.toggleModal}>Scegli Immagine</Button>
-                                  </Col>
-                                </Row>
-                              </CardBody>
-                            </Card>
                           </Col>
                         </Row>
                       </Col>
                       <Col xs="12" md="4" className="mt-5 mb-0 pl-3 pl-md-5 mb-md-0 mt-md-3 sub-menu">
                         <Row>
+                          <Col xs="12" md="7" className="mt-2 mt-md-3">
+                            <Card>
+                              <CardBody>
+                                <Row>
+                                  <Col xs="12" md="12">
+                                    <h5>Inserisci immagine</h5>
+                                    <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+                                  </Col>
+                                  <Col xs="12" md="12">
+                                    <Button color="primary" className="mt-4" onClick={this.toggleModal}>Scegli Immagine</Button>
+                                  </Col>
+                                </Row>
+                              </CardBody>
+                            </Card>
+                          </Col>
                           <Col xs="12" md="8">
                             <Form>
                               <FormGroup>
@@ -127,21 +142,6 @@ class MenuDetail extends Component {
                                 <Input type="textarea" name="description" id="menuDescription" placeholder="Inserisci descrizione" />
                               </FormGroup>
                             </Form>
-                          </Col>
-                          <Col xs="12" md="8" className="mt-2 mt-md-3">
-                            <Card>
-                              <CardBody>
-                                <Row>
-                                  <Col xs="12" md="12">
-                                    <h5>Inserisci immagine</h5>
-                                    <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-                                  </Col>
-                                  <Col xs="12" md="12" className="align-self-end">
-                                    <Button color="primary" className="mt-4 float-right" onClick={this.toggleModal}>Scegli Immagine</Button>
-                                  </Col>
-                                </Row>
-                              </CardBody>
-                            </Card>
                           </Col>
                         </Row>
                       </Col>
